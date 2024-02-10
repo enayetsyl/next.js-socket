@@ -23,7 +23,7 @@ const socketFunction =  async (req, res) => {
       });
     });
 
-    io.listen(3001); // Adjust the port as needed
+    io.listen(); // Adjust the port as needed
 
     return res.status(200).json({ message: "Socket.io server started" });
   } else {
